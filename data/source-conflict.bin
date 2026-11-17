@@ -1,0 +1,9 @@
+{
+  "facility": "F-1",
+  "revision": "r1",
+  "site": "P-2",
+  "operator": "企业乙",
+  "buildings": [
+    "B-1"
+  ]
+}

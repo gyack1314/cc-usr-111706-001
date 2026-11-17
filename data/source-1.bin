@@ -1,0 +1,11 @@
+{
+  "facility": "F-1",
+  "revision": "r1",
+  "site": "P-1",
+  "operator": "企业甲",
+  "buildings": [
+    "B-1",
+    "B-2"
+  ],
+  "source_kind": "commercial-list"
+}

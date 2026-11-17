@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://registry.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/facility-identity/primary",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 166,
+        "sha256": "742208e78d6caf1e75570d9628654f522c2e717e49f22cd33e695359632855dd"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/facility-identity/support",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-2.bin",
+        "status": 200,
+        "bytes": 137,
+        "sha256": "88ab5fe66e0836e6cee82ff5dfb15f52781b2ef368c9987ee3119f286bca3d54"
+      }
+    }
+  ]
+}

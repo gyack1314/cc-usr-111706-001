@@ -1,0 +1,10 @@
+{
+  "facility": "F-1",
+  "revision": "r1",
+  "permit": "PER-1",
+  "site": "P-1",
+  "buildings": [
+    "B-1"
+  ],
+  "status": "verified"
+}
