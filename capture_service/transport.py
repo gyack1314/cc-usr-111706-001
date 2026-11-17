@@ -1,6 +1,7 @@
-"""从本地冻结响应中恢复来源和请求身份。"""
+"""从本地冻结响应中恢复来源、请求身份与取得时间。"""
 import hashlib
 import json
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -9,6 +10,16 @@ def origin(url):
     if x.scheme not in ('http','https') or not x.netloc or x.username or x.password:
         raise ValueError('来源地址不合法')
     return x.scheme+'://'+x.netloc.lower()
+
+def acquired_at(meta):
+    ts=meta.get('acquired_at')
+    if not isinstance(ts,str) or not ts:
+        raise ValueError('来源取得时间不明')
+    try:
+        datetime.fromisoformat(ts)
+    except ValueError:
+        raise ValueError('来源取得时间不明')
+    return ts
 
 class Replay:
     def __init__(self,path):
@@ -33,8 +44,10 @@ class Replay:
         meta=step['response']
         if len(raw)!=meta['bytes'] or hashlib.sha256(raw).hexdigest()!=meta['sha256']:
             raise ValueError('原文字节身份不符')
+        ts=acquired_at(meta)
         self.position+=1
         receipt={'method':method,'url':url,'status':meta['status'],'body_sha256':meta['sha256'],
-                 'bytes':len(raw),'credential_scope':credential_scope,'step':self.position}
+                 'bytes':len(raw),'acquired_at':ts,
+                 'credential_scope':credential_scope,'step':self.position}
         self.receipts.append(receipt)
         return raw,receipt

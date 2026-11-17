@@ -13,7 +13,8 @@
         "file": "source-1.bin",
         "status": 200,
         "bytes": 166,
-        "sha256": "742208e78d6caf1e75570d9628654f522c2e717e49f22cd33e695359632855dd"
+        "sha256": "742208e78d6caf1e75570d9628654f522c2e717e49f22cd33e695359632855dd",
+        "acquired_at": "2026-11-01T08:00:00+00:00"
       }
     },
     {
@@ -26,7 +27,8 @@
         "file": "source-2.bin",
         "status": 200,
         "bytes": 137,
-        "sha256": "88ab5fe66e0836e6cee82ff5dfb15f52781b2ef368c9987ee3119f286bca3d54"
+        "sha256": "88ab5fe66e0836e6cee82ff5dfb15f52781b2ef368c9987ee3119f286bca3d54",
+        "acquired_at": "2026-11-02T08:00:00+00:00"
       }
     }
   ]

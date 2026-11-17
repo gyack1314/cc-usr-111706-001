@@ -1,0 +1,10 @@
+{
+  "facility": "F-1",
+  "revision": "r1",
+  "source_kind": "footprint",
+  "footprint": "FP-9",
+  "site": "P-1",
+  "buildings": [
+    "B-2"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "allowed_origins": [
+    "https://registry.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/commercial-list/F-1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-1.bin",
+        "status": 200,
+        "bytes": 206,
+        "sha256": "084e2ebdfccdadef0ba5265ae2c69bececc7861252634373cca43df37ff69ef1",
+        "acquired_at": "2026-11-01T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/permit/PER-1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-2.bin",
+        "status": 200,
+        "bytes": 165,
+        "sha256": "16683b47aadf2d32811f241f422f232852636d51ddfce287d747450e0899f66d",
+        "acquired_at": "2026-11-02T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/footprint/FP-9",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-3.bin",
+        "status": 200,
+        "bytes": 146,
+        "sha256": "2238cc7de6cf08f6d1f81abf70628a05f67f80118cb0fb441881e8d185ac2574",
+        "acquired_at": "2026-11-04T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/permit/PER-1/r2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-4.bin",
+        "status": 200,
+        "bytes": 195,
+        "sha256": "63c08f2d7b4e1e616256cbe5cd341cda192da9ff3e41f593318b7777389b130b",
+        "acquired_at": "2026-11-05T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/commercial-list/F-1/r2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-5.bin",
+        "status": 200,
+        "bytes": 224,
+        "sha256": "2ac17feed41995409b6e08ebbe4c90325e7a543f569e7bfb2dd55c5923f674c3",
+        "acquired_at": "2026-11-06T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/commercial-list/F-2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-6.bin",
+        "status": 200,
+        "bytes": 129,
+        "sha256": "64f1e48125884dee3b99674f2006cd8e95ee899ea1d5a823d2aece548c698834",
+        "acquired_at": "2026-11-07T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/permit/PER-7",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-7.bin",
+        "status": 200,
+        "bytes": 204,
+        "sha256": "ebca6c01bf21cdfaded85c203d543005354ff595663534ba37e47eb79ae94742",
+        "acquired_at": "2026-11-08T09:00:00+00:00"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://registry.example.test/footprint/FP-10",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "id-8.bin",
+        "status": 200,
+        "bytes": 115,
+        "sha256": "955370abd72e8b215ac7c29bf0696256f02f3fab0df83bb4b32ac09fb3f90191",
+        "acquired_at": "2026-11-09T09:00:00+00:00"
+      }
+    }
+  ]
+}

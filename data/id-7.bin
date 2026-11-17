@@ -1,0 +1,14 @@
+{
+  "facility": "F-3",
+  "revision": "r1",
+  "permit": "PER-7",
+  "site": "P-1",
+  "operator": "企业丙",
+  "aliases": [
+    "甲一中心"
+  ],
+  "buildings": [
+    "B-1"
+  ],
+  "status": "verified"
+}
